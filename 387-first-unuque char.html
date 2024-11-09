@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function unique(s) {
+        let arr = s.split('');
+        let unique = [];
+        for (let i = 0; i < arr.length; i++) {
+            const element = arr[i];
+        if(arr.includes(element)){
+            arr.splice(arr.indexOf(element),1);
+        }else{
+            arr.push(element)
+        }
+            
+        }
+        const str = arr.find((e)=>{
+            if(e==unique[0]){
+                return arr.indexOf(e);
+            }
+        })
+        
+    }
+   </script> 
+</body>
+</html>
