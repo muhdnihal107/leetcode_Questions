@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function plusOne(digits){
+            let number = BigInt(digits.join(""));
+          number = number + BigInt(1);
+         let arr = String(number).split('').map(Number);
+         return arr
+         console.log(arr);
+         
+         
+        }
+
+        plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3])
+    </script>
+</body>
+</html>
